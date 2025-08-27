@@ -39,7 +39,7 @@ const Sidebar = ({
 
   const sideItems = [
     {
-      name: "My Brain",
+      name: "My Mind",
       icon: <AllContent />,
     },
     {

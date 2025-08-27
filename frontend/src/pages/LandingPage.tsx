@@ -12,7 +12,7 @@ const LandingPage = () => {
     <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col items-center justify-center px-6">
       {/* App Title */}
       <h1 className="text-4xl sm:text-6xl font-extrabold text-white text-center mb-6 py-4">
-        Welcome to <span className="text-indigo-400">Second Brain | Digital Brain</span>
+        Welcome to <span className="text-indigo-400">Memo Mind | Digital Brain</span>
       </h1>
 
       {/* Subtitle */}
