@@ -10,11 +10,20 @@ import brainRouter from "./routes/brain";
 const app = express();
 
 const allowedOrigins = [
-  process.env.FRONTEND_URL || "http://localhost:5173"
+  process.env.FRONTEND_URL || "http://localhost:5173",
+  "https://memo-mind.vercel.app",   // add this if needed
+  "https://memo-mind-pi.vercel.app" // keep this one too
 ];
+
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
   })
