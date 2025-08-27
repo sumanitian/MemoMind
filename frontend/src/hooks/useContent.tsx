@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { setContentState } from "../config/redux/contentSlice";
 axios.defaults.withCredentials = true;
 
