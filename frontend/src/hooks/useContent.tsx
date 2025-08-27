@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { setContentState } from "../config/redux/contentSlice";
 axios.defaults.withCredentials = true;
 
@@ -22,12 +22,12 @@ const useContent = (path: string) => {
 
       if (result.data.success) {
         dispatch(setContentState(result.data.data)); // Dispatch directly
-        // toast.success("Content fetched successfully");
+        toast.success("Content fetched successfully");
       } else {
         // toast.warning("Add at least one content!");
       }
     } catch (error) {
-      // toast.error((error as Error).message || "Error fetching content");
+      toast.error((error as Error).message || "Error fetching content");
       console.error(error);
     }
   }
