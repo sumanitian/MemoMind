@@ -45,10 +45,10 @@ export const InputBox = ({
 
 export const shareModalText = `Share your entire collection of notes, documents, tweets, and
               videos with others. They'll be able to import your content into
-              their own Second Brain.`;
+              their own Memo Mind.`;
 
 export const deleteModalText = `Are You Sure To Delete?`;
 
-export const shareModalTitle = `Share Your Second Brain`;
+export const shareModalTitle = `Share Your Memo Mind`;
 
 export const deleteModalTitle = `Delete Content`;

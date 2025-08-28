@@ -65,7 +65,7 @@ const PopUpModal = ({
                   }
                 />
                 <Button
-                  name="Share Brain"
+                  name="Share Mind"
                   size="md"
                   type="primary"
                   beforeIcon={<Copy />}
